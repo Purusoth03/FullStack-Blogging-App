@@ -109,5 +109,13 @@
             <url>http://43.205.103.100:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
+   <executions>
+  <execution>
+    <phase>wrongphase</phase> <!-- This must be a valid phase -->
+    <goals>
+      <goal>somegoal</goal>
+    </goals>
+  </execution>
+</executions>
 
 </project>
